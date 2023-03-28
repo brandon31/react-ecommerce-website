@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ff7300;
+  color: #fff;
+}
+#tv {
+  width: 350px;
+  filter: drop-shadow(-150px 40px 200px #111);
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  margin: 2rem 3rem;
+}
+.wrapper > .content-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: text-content;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes text-content {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+.wrapper > .content-text .home-title {
+  font-family: arial;
+  font-size: 3.2rem;
+}
+.wrapper > .content-text .home-desc {
+  font-family: arial;
+  font-size: 1.2rem;
+  margin: 0.5rem 0.8rem;
+  color: #f1f1f1;
+}
+.wrapper > .content-text .home-btn {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0.8rem;
+}
+.wrapper > .content-text button {
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 1rem;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.wrapper > .content-text button:hover {
+  color: #ff7300;
+  background-color: #fff;
+  transform: scale(0.9);
+}
+.wrapper .content-image {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: image-content;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes image-content {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.wrapper .content-image a {
+  color: #fff;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-family: arial;
+  filter: drop-shadow(0px 0px 20px #000);
+  text-decoration: none;
+  z-index: 100000;
+}
+.cards {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  background-color: #f1f1f1;
+  padding: 1rem;
+  margin: -1rem;
+  animation: cards;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+@keyframes cards {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #tv {
+    width: 150px;
+    filter: drop-shadow(-150px 40px 200px #111);
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    align-items: center;
+    margin: 2rem 0.5rem;
+  }
+  .wrapper > .content-text .home-title {
+    font-size: 1.5rem;
+  }
+  .wrapper > .content-text .home-desc {
+    font-size: 1rem;
+    margin: 0.5rem 0.2rem;
+  }
+  .wrapper > .content-text .home-btn {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0.5rem;
+  }
+  .wrapper > .content-text button {
+    width: 120px;
+    border-radius: 10px;
+    padding: 0.6rem;
+    font-size: 16px;
+  }
+  .wrapper .content-image {
+    display: none;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  #tv {
+    width: 150px;
+    display: none;
+    filter: drop-shadow(-150px 40px 200px #111);
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    align-items: center;
+    margin: 2rem 0.5rem;
+  }
+  .wrapper > .content-text .home-title {
+    font-size: 1.5rem;
+  }
+  .wrapper > .content-text .home-desc {
+    font-size: 1rem;
+    margin: 0.5rem 0.2rem;
+  }
+  .wrapper > .content-text .home-btn {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0.5rem;
+  }
+  .wrapper > .content-text button {
+    width: 120px;
+    border-radius: 10px;
+    padding: 0.6rem;
+    font-size: 16px;
+  }
+  .wrapper .content-image {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  #tv {
+    width: 150px;
+    display: none;
+    filter: drop-shadow(-150px 40px 200px #111);
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    align-items: center;
+    margin: 2rem 0.5rem;
+  }
+  .wrapper > .content-text .home-title {
+    font-size: 2rem;
+  }
+  .wrapper > .content-text .home-desc {
+    font-size: 1rem;
+    margin: 0.5rem 0.2rem;
+  }
+  .wrapper > .content-text .home-btn {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0.5rem;
+  }
+  .wrapper > .content-text button {
+    width: 200px;
+    border-radius: 10px;
+    padding: 0.6rem;
+    font-size: 18px;
+  }
+  .wrapper .content-image {
+    display: none;
+  }
+}

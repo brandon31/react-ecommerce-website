@@ -1,0 +1,36 @@
+.special {
+  background-color: #fff;
+  margin: -1rem;
+  padding: 1rem;
+  height: 830px;
+}
+
+#special-headline {
+  color: #ff7300;
+  font-size: 4rem;
+  margin: 1.5rem;
+}
+#spec {
+  margin: 0rem 2rem 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-family: arial;
+  color: #1d2630;
+}
+#shop-now {
+  width: 300px;
+  height: 80px;
+  background-color: transparent;
+  border: 1px solid #ff7300;
+  color: #ff7300;
+  border-radius: 50px;
+  margin: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+#shop-now:hover {
+  background-color: #ff7300;
+  color: #fff;
+  border: none;
+  transform: scale(0.9);
+}
